@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	title: "Expert | Counter State App",
 	description: "Expert Counter State App",
 };
-
+/*100 MAX*/
 const page = () => {
 	return (
 		<>

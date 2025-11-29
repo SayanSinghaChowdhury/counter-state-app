@@ -19,7 +19,7 @@ const BasicCounter = () => {
 	};
 	return (
 		<>
-			<CardContent className="space-y-4">
+			<CardContent className="space-y-8">
 				<div className="text-center text-xl">
 					Count: <span className="font-bold">{count}</span>
 				</div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	title: "Advance | Counter State App",
 	description: "Advance Counter State App",
 };
-
+/* UNLIMETED CALCLULATION */
 const page = () => {
 	return (
 		<>

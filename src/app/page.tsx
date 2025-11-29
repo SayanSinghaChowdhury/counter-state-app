@@ -1,5 +1,10 @@
 import BasicCounter from "@/components/BasicCounter";
-import { Card, CardHeader, CardTitle } from "@/components/shadcnui/card";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/components/shadcnui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,6 +12,7 @@ export const metadata: Metadata = {
 	description: "Basic Counter State App",
 };
 
+// UNLIMETED BUT ONLY 1
 const page = () => {
 	return (
 		<section className="grid h-[90dvh] place-items-center">
@@ -16,6 +22,7 @@ const page = () => {
 						Basic Counter
 					</CardTitle>
 				</CardHeader>
+
 				<BasicCounter />
 			</Card>
 		</section>
