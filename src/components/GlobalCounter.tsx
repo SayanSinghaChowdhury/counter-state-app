@@ -1,15 +1,33 @@
 "use client";
 
+import { counAtom } from "@/lib/atoms";
+import { useAtom } from "jotai";
 import { useState } from "react";
 
 const GlobalCounter = () => {
-	const [count, setCount] = useState(0);
+	const [count, setCount] = useAtom(counAtom);
+
 	const plush = () => {
-		setCount(count + 1);
+		if (count < 100) {
+			setCount(count + 1);
+		}
 	};
 
 	const minus = () => {
-		setCount(count - 1);
+		if (count > 0) {
+			setCount(count - 1);
+		}
+	};
+	const plushTen = () => {
+		if (count <= 90) {
+			setCount(count + 10);
+		}
+	};
+
+	const minusTen = () => {
+		if (count > 9) {
+			setCount(count - 10);
+		}
 	};
 	return (
 		<>
