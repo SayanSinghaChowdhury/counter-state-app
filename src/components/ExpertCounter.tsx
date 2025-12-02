@@ -65,7 +65,7 @@ const ExpertCounter = () => {
 
 					<Button
 						onClick={plushTen}
-						disabled={count >= 90}
+						disabled={count >= 91}
 						className="cursor-pointer">
 						<PlusCircleIcon /> Plus 10
 					</Button>
