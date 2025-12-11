@@ -7,7 +7,6 @@ import {
 	CardTitle,
 } from "@/components/shadcnui/card";
 import { Metadata } from "next";
-import { GlobalError } from "next/dist/build/templates/app-page";
 
 export const metadata: Metadata = {
 	title: "Atomic | Counter State App",
@@ -16,24 +15,21 @@ export const metadata: Metadata = {
 
 const page = () => {
 	return (
-		<>
-			<section className="grid h-[90dvh] place-items-center">
-				<Card className="w-xs">
-					<CardHeader>
-						<CardTitle className="text-center text-2xl font-semibold">
-							Atomic Counter
-						</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className="space-y-8">
-							<GlobalCounter />
+		<section className="grid h-[90dvh] place-items-center">
+			<Card className="w-xs">
+				<CardHeader>
+					<CardTitle className="text-center text-2xl font-semibold">
+						Atomic Counter
+					</CardTitle>
+				</CardHeader>
 
-							<GlobalButton />
-						</div>
-					</CardContent>
-				</Card>
-			</section>
-		</>
+				<CardContent className="space-y-8">
+					<GlobalCounter />
+
+					<GlobalButton />
+				</CardContent>
+			</Card>
+		</section>
 	);
 };
 

@@ -1,21 +1,21 @@
 "use client";
 
 import { MinusCircleIcon, PlusCircleIcon } from "lucide-react";
+import { useState } from "react";
 import { Button } from "./shadcnui/button";
 import { CardContent } from "./shadcnui/card";
-import { useState } from "react";
 
 const AdvanceCounter = () => {
 	const [count, setCount] = useState(0);
 
-	const plush = () => {
+	const plus = () => {
 		setCount(count + 1);
 	};
 
 	const minus = () => {
 		setCount(count - 1);
 	};
-	const plushTen = () => {
+	const plusTen = () => {
 		setCount(count + 10);
 	};
 
@@ -39,7 +39,7 @@ const AdvanceCounter = () => {
 					</Button>
 
 					<Button
-						onClick={plush}
+						onClick={plus}
 						className="cursor-pointer">
 						<PlusCircleIcon /> Plus 1
 					</Button>
@@ -53,7 +53,7 @@ const AdvanceCounter = () => {
 					</Button>
 
 					<Button
-						onClick={plushTen}
+						onClick={plusTen}
 						className="cursor-pointer">
 						<PlusCircleIcon /> Plus 10
 					</Button>

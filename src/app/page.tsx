@@ -1,10 +1,5 @@
 import BasicCounter from "@/components/BasicCounter";
-import {
-	Card,
-	CardContent,
-	CardHeader,
-	CardTitle,
-} from "@/components/shadcnui/card";
+import { Card, CardHeader, CardTitle } from "@/components/shadcnui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
